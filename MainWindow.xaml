@@ -14,23 +14,50 @@
             <ColumnDefinition Width="6*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*"></RowDefinition>
-        </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Grid.Column="0" Background="Gray">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="2*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*" />
-                <RowDefinition Height="2*" />
-            </Grid.RowDefinitions>
-
-            <Grid Grid.Column="0" Grid.Row="0" Background="AliceBlue">
-            </Grid>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <ItemsControl Tag="items-control">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel HorizontalAlignment="Center" Margin="10"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 1</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 2</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 3</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 4</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 5</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 6</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 7</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 8</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 9</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 10</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 1</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 2</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 3</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 4</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 5</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 6</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 7</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 8</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 9</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 10</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 1</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 2</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 3</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 4</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 5</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 6</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 7</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 8</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 9</Button>
+                    <Button Click="MessageBoxShow" Margin="5" Width="150" Height="150">Text 10</Button>
+                </ItemsControl>
+            </ScrollViewer>
         </Grid>
+
         <Grid Grid.Row="0" Grid.Column="1" Background="DimGray"></Grid>
     </Grid>
 </Window>
